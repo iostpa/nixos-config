@@ -1,4 +1,5 @@
 { config, pkgs, ... }:
+l config, pkgs, ... }:
 let
   nix-gaming = import (builtins.fetchTarball "https://github.com/fufexan/nix-gaming/archive/master.tar.gz");
 in
@@ -97,7 +98,8 @@ in
     firefox.enable = true;
     # Install virt-manager
     virt-manager.enable = true;
-
+    # Install zsh
+    zsh.enable = true;
     # Install 1Password
     _1password.enable = true;
     _1password-gui = {
