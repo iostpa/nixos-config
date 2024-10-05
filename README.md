@@ -1,3 +1,3 @@
-# Welcome to my dotfiles!
+# Welcome to my NixOS config!
 
-These dotfiles are for NixOS! At the moment its just configuration.nix, but I'm aiming to move it to flakes.
+These are my configs for NixOS! At the moment its just configuration.nix, but I'm aiming to move it to flakes.
