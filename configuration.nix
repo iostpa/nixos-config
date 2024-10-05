@@ -89,6 +89,7 @@ in
       #  thunderbird
     ];
   };
+  users.defaultUserShell = pkgs.zsh;
 
   virtualisation.libvirtd.enable = true;
   programs = {
@@ -151,6 +152,7 @@ in
     whatsapp-for-linux
     pkgs.chromium
     pkgs.epson-escpr2
+    pkgs.zsh
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
