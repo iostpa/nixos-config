@@ -99,13 +99,23 @@ in
     # Install virt-manager
     virt-manager.enable = true;
     # Install zsh
-    zsh.enable = true;
+    zsh = {
+      enable = true;
+      autosuggestions.enable = true;
+      syntaxHighlighting.enable = true;
+    };
     # Install 1Password
     _1password.enable = true;
     _1password-gui = {
       enable = true;
     };
     nix-ld.enable = true;
+    steam = {
+      enable = true;
+      remotePlay.openFirewall = true; # Open ports in the firewall for Steam Remote Play
+      dedicatedServer.openFirewall = true; # Open ports in the firewall for Source Dedicated Server
+      localNetworkGameTransfers.openFirewall = true; # Open ports in the firewall for Steam Local Network Game Transfers
+};
   };
 
   # Enable Nix-gaming
@@ -153,6 +163,7 @@ in
     pkgs.chromium
     pkgs.epson-escpr2
     pkgs.zsh
+    tree
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
