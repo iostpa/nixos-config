@@ -116,6 +116,7 @@ in
       dedicatedServer.openFirewall = true; # Open ports in the firewall for Source Dedicated Server
       localNetworkGameTransfers.openFirewall = true; # Open ports in the firewall for Steam Local Network Game Transfers
 };
+    starship.enable = true
   };
 
 
@@ -167,7 +168,6 @@ in
     pkgs.zsh
     tree
     pkgs.nerdfonts
-    starship
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
