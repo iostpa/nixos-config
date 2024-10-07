@@ -168,6 +168,7 @@ in
     pkgs.zsh
     tree
     pkgs.nerdfonts
+    starship
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
