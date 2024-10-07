@@ -3,21 +3,21 @@
 size = 16.0
 
 [font.normal]
-family = "RobotoMono Nerd Font"
+family = "FiraCode Nerd Font"
 style = "Regular"
 
 [window]
 startup_mode = "Windowed"
 dynamic_padding = true
-opacity = 1.0
+opacity = 1
 
 [window.padding]
 x = 10
 y = 10
 
-#[window.dimensions]
-#columns = 90
-#lines = 25
+[window.dimensions]
+columns = 90
+lines = 25
 
 [colors.normal]
 black = "#21222c"
@@ -30,7 +30,7 @@ cyan = "#8be9fd"
 white = "#f8f8f2"
 
 [colors.primary]
-background = "#282a36"
+background = "#334155"
 foreground = "#f8f8f2"
 
 [colors.cursor]
