@@ -169,6 +169,7 @@ in
     tree
     pkgs.nerdfonts
     starship
+    pkgs.yt-dlp
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
