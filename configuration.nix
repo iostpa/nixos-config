@@ -118,6 +118,8 @@ in
 };
   };
 
+
+
   # Enable Nix-gaming
   nix.settings = {
     substituters = [ "https://nix-gaming.cachix.org" ];
@@ -165,6 +167,7 @@ in
     pkgs.zsh
     tree
     pkgs.nerdfonts
+    starship
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
