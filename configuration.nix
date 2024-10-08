@@ -171,6 +171,7 @@ in
     starship
     pkgs.yt-dlp
     unzip
+    konsave
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
