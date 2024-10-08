@@ -170,6 +170,7 @@ in
     pkgs.nerdfonts
     starship
     pkgs.yt-dlp
+    unzip
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
