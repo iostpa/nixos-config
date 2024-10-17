@@ -54,7 +54,15 @@ in
     };
 
     # Enable CUPS to print documents.
-    printing.enable = true;
+    printing = {
+      enable = true;
+      drivers = [ pkgs.epson-escpr2 ];
+    };
+    avahi = {
+      enable = true;
+      nssmdns4 = true;
+      openFirewall = true;
+    };
     pipewire = {
       enable = true;
       alsa.enable = true;
@@ -173,6 +181,7 @@ in
     unzip
     konsave
     audacity
+    pkgs.element-desktop
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
