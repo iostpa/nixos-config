@@ -141,10 +141,10 @@ in
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
-  environment.systemPackages = with pkgs; [
-    #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
+ environment.systemPackages = with pkgs; [
+    vim
+    neovim
     wget
-    speedtest-go
     git
     neofetch
     fastfetch
@@ -183,6 +183,21 @@ in
     audacity
     pkgs.element-desktop
     dig
+
+    # Hopefully it will work for lazyvim
+    clang-tools
+    cmake
+    codespell
+    conan
+    cppcheck
+    doxygen
+    gtest
+    lcov
+    vcpkg
+    vcpkg-tool
+    gcc
+
+    gh
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
