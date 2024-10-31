@@ -141,7 +141,7 @@ in
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
- environment.systemPackages = with pkgs; [
+  environment.systemPackages = with pkgs; [
     vim
     neovim
     wget
@@ -198,6 +198,8 @@ in
     gcc
 
     gh
+    nodejs
+    speedtest-cli
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
