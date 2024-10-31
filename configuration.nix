@@ -199,7 +199,7 @@ in
 
     gh
     nodejs
-    speedtest-cli
+    ookla-speedtest
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
