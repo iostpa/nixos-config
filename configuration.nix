@@ -201,7 +201,7 @@ in
     gh
     nodejs
     ookla-speedtest
-    kitty
+    pkgs.kitty
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
