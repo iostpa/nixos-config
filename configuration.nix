@@ -125,6 +125,7 @@ in
       localNetworkGameTransfers.openFirewall = true; # Open ports in the firewall for Steam Local Network Game Transfers
 };
     starship.enable = true;
+    hyprland.enable = true;
   };
 
 
@@ -200,6 +201,7 @@ in
     gh
     nodejs
     ookla-speedtest
+    kitty
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
