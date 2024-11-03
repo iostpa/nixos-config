@@ -126,6 +126,10 @@ in
 };
     starship.enable = true;
     hyprland.enable = true;
+    neovim = {
+    	enable = true;
+    	defaultEditor = true;
+    };
   };
 
 
@@ -144,7 +148,6 @@ in
   # $ nix search wget
   environment.systemPackages = with pkgs; [
     vim
-    neovim
     wget
     git
     neofetch
