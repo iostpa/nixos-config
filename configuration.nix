@@ -205,6 +205,7 @@ in
     nodejs
     ookla-speedtest
     pkgs.kitty
+    davinci-resolve
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
