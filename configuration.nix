@@ -130,6 +130,7 @@ in
     	enable = true;
     	defaultEditor = true;
     };
+    sway.enable = true;
   };
 
 
@@ -206,6 +207,7 @@ in
     ookla-speedtest
     pkgs.kitty
     davinci-resolve
+    lutris
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
