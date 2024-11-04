@@ -11,3 +11,4 @@ zstyle :compinstall filename '/home/ethan/.zshrc'
 autoload -Uz compinit
 compinit
 # End of lines added by compinstall
+nitch
