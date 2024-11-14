@@ -3,10 +3,7 @@
 These are my configs for NixOS! At the moment its some basic stuff.
 
 Current tree of the config:
-
 ```
-```
-
 .
 ├── configs
 │   ├── alacritty
@@ -38,8 +35,6 @@ Current tree of the config:
 ├── flake.nix
 ├── hardware-configuration.nix
 └── README.me
-
-```
 ```
 
 >[!NOTE]
