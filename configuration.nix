@@ -104,7 +104,7 @@
   podman = {
     enable = true;
     dockerCompat = true;
-  };
+    };
   libvirtd.enable = true;
   };
 
@@ -138,7 +138,6 @@
     	enable = true;
     	defaultEditor = true;
     };
-    sway.enable = true;
   };
 
 
