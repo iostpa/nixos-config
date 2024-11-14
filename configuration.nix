@@ -48,7 +48,7 @@ in
       enable = true;
       videoDrivers = [ "nvidia" ];
       xkb = {
-        layout = "us";
+        layout = "us,ro";
         variant = "";
       };
     };
@@ -99,7 +99,14 @@ in
   };
   users.defaultUserShell = pkgs.zsh;
 
-  virtualisation.libvirtd.enable = true;
+  virtualisation = {
+  podman = {
+    enable = true;
+    dockerCompat = true;
+  };
+  libvirtd.enable = true;
+  };
+
   programs = {
 
     # Install firefox.
@@ -208,6 +215,8 @@ in
     pkgs.kitty
     davinci-resolve
     lutris
+    pkgs.nodejs_22
+    pkgs.distrobox
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
