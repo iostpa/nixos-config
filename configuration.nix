@@ -229,6 +229,7 @@
     pkgs.nodejs_23
     pkgs.distrobox
     openrazer-daemon
+    btop
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
