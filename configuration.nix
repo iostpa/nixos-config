@@ -230,6 +230,8 @@
     pkgs.distrobox
     openrazer-daemon
     btop
+    pkgs.termius
+    pkgs.lunar-client
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
