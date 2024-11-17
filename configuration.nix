@@ -232,6 +232,7 @@
     btop
     pkgs.termius
     pkgs.lunar-client
+    wl-clipboard
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
