@@ -7,6 +7,8 @@
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
 
     nix-gaming.url = "github:fufexan/nix-gaming";
+
+    hyprpanel.url = "github:Jas-SinghFSU/HyprPanel";
   };
 
   outputs = { nixpkgs, ... } @ inputs: 
@@ -15,9 +17,13 @@
     in {
       nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
         system = system;
-        specialArgs = { inherit inputs; };
+        specialArgs = { 
+          inherit inputs;
+          inherit system;
+        };
         modules = [
-        ./configuration.nix 
+        ./configuration.nix
+        {nixpkgs.overlays = [inputs.hyprpanel.overlay];}
         ];
     };
   };
