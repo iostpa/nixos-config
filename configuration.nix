@@ -234,18 +234,7 @@
     pkgs.lunar-client
 
     wl-clipboard
-    libgtop
-    bluez
-    dart-sass
-    brightnessctl
-    bun
     pkgs.hyprpanel
-    pkgs.gnome-bluetooth
-    python3Full
-    hyprpicker
-    hyprsunset
-    matugen
-    swww
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
