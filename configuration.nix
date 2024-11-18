@@ -221,7 +221,7 @@
     pkgs.nodejs
     pkgs.ookla-speedtest
     pkgs.kitty
-    davinci-resolve
+    pkgs.davinci-resolve
     pkgs.lutris
     pkgs.nodejs_23
     pkgs.distrobox
