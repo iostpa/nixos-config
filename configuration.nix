@@ -233,6 +233,7 @@
     pkgs.wl-clipboard
     pkgs.hyprpanel
     pkgs.rofi
+    pkgs.hyprpicker
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
