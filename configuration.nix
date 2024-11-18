@@ -1,12 +1,13 @@
-{ config, pkgs, inputs, ... }:
-
 {
-
-  imports =
-    [
-      # Include the results of the hardware scan.
-      ./hardware-configuration.nix
-    ];
+  config,
+  pkgs,
+  inputs,
+  ...
+}: {
+  imports = [
+    # Include the results of the hardware scan.
+    ./hardware-configuration.nix
+  ];
 
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
@@ -44,7 +45,7 @@
     desktopManager.plasma6.enable = true;
     xserver = {
       enable = true;
-      videoDrivers = [ "nvidia" ];
+      videoDrivers = ["nvidia"];
       xkb = {
         layout = "us,ro";
         variant = "";
@@ -54,7 +55,7 @@
     # Enable CUPS to print documents.
     printing = {
       enable = true;
-      drivers = [ pkgs.epson-escpr2 ];
+      drivers = [pkgs.epson-escpr2];
     };
     avahi = {
       enable = true;
@@ -84,15 +85,15 @@
 
   # Enable touchpad support (enabled default in most desktopManager).
   # services.xserver.libinput.enable = true;
-  
+
   # Configure nvidia stuff
-  hardware.nvidia.open=false;
+  hardware.nvidia.open = false;
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.ethan = {
     isNormalUser = true;
     description = "Ethan";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = ["networkmanager" "wheel"];
     packages = with pkgs; [
       kdePackages.kate
       #  thunderbird
@@ -101,15 +102,14 @@
   users.defaultUserShell = pkgs.zsh;
 
   virtualisation = {
-  podman = {
-    enable = true;
-    dockerCompat = true;
+    podman = {
+      enable = true;
+      dockerCompat = true;
     };
-  libvirtd.enable = true;
+    libvirtd.enable = true;
   };
 
   programs = {
-
     # Install firefox.
     firefox.enable = true;
     # Install virt-manager
@@ -131,12 +131,12 @@
       remotePlay.openFirewall = true; # Open ports in the firewall for Steam Remote Play
       dedicatedServer.openFirewall = true; # Open ports in the firewall for Source Dedicated Server
       localNetworkGameTransfers.openFirewall = true; # Open ports in the firewall for Steam Local Network Game Transfers
-};
+    };
     starship.enable = true;
     hyprland.enable = true;
     neovim = {
-    	enable = true;
-    	defaultEditor = true;
+      enable = true;
+      defaultEditor = true;
     };
     tmux = {
       enable = true;
@@ -144,14 +144,11 @@
     };
   };
 
-
-
   # Enable Nix-gaming
   nix.settings = {
-    substituters = [ "https://nix-gaming.cachix.org" ];
-    trusted-public-keys = [ "nix-gaming.cachix.org-1:nbjlureqMbRAxR1gJ/f3hxemL9svXaZF/Ees8vCUUs4=" ];
+    substituters = ["https://nix-gaming.cachix.org"];
+    trusted-public-keys = ["nix-gaming.cachix.org-1:nbjlureqMbRAxR1gJ/f3hxemL9svXaZF/Ees8vCUUs4="];
   };
-
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
@@ -160,24 +157,24 @@
   nix.settings.experimental-features = ["nix-command" "flakes"];
 
   # Enable OpenRazer
-  hardware.openrazer.enable = true;  
+  hardware.openrazer.enable = true;
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
-  environment.systemPackages = with pkgs; [
-    vim
-    wget
-    git
-    neofetch
-    fastfetch
-    nitch
-    flatpak
+  environment.systemPackages = [
+    pkgs.vim
+    pkgs.wget
+    pkgs.git
+    pkgs.neofetch
+    pkgs.fastfetch
+    pkgs.nitch
+    pkgs.flatpak
     pkgs.alacritty
-    vscode
+    pkgs.vscode
     pkgs.flameshot
     pkgs.vlc
-    spotify
-    vesktop
+    pkgs.spotify
+    pkgs.vesktop
     (pkgs.wrapOBS {
       plugins = with pkgs.obs-studio-plugins; [
         wlrobs
@@ -188,52 +185,52 @@
     inputs.nix-gaming.packages.${pkgs.system}.osu-lazer-bin
     inputs.nix-gaming.packages.${pkgs.system}.osu-stable
 
-    libreoffice-qt
-    hunspell
-    hunspellDicts.uk_UA
-    hunspellDicts.th_TH
+    pkgs.libreoffice-qt
+    pkgs.hunspell
+    pkgs.hunspellDicts.uk_UA
+    pkgs.hunspellDicts.th_TH
 
-    whatsapp-for-linux
+    pkgs.whatsapp-for-linux
     pkgs.chromium
     pkgs.epson-escpr2
     pkgs.zsh
-    tree
+    pkgs.tree
     pkgs.nerdfonts
-    starship
+    pkgs.starship
     pkgs.yt-dlp
-    unzip
-    konsave
-    audacity
+    pkgs.unzip
+    pkgs.konsave
+    pkgs.audacity
     pkgs.element-desktop
-    dig
+    pkgs.dig
 
     # Hopefully it will work for lazyvim
-    clang-tools
-    cmake
-    codespell
-    conan
-    cppcheck
-    doxygen
-    gtest
-    lcov
-    vcpkg
-    vcpkg-tool
-    gcc
+    pkgs.clang-tools
+    pkgs.cmake
+    pkgs.codespell
+    pkgs.conan
+    pkgs.cppcheck
+    pkgs.doxygen
+    pkgs.gtest
+    pkgs.lcov
+    pkgs.vcpkg
+    pkgs.vcpkg-tool
+    pkgs.gcc
 
-    gh
-    nodejs
-    ookla-speedtest
+    pkgs.gh
+    pkgs.nodejs
+    pkgs.ookla-speedtest
     pkgs.kitty
     davinci-resolve
-    lutris
+    pkgs.lutris
     pkgs.nodejs_23
     pkgs.distrobox
-    openrazer-daemon
-    btop
+    pkgs.openrazer-daemon
+    pkgs.btop
     pkgs.termius
     pkgs.lunar-client
 
-    wl-clipboard
+    pkgs.wl-clipboard
     pkgs.hyprpanel
   ];
 
@@ -263,5 +260,4 @@
   # Before changing this value read the documentation for this option
   # (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
   system.stateVersion = "24.11"; # Did you read the comment?
-
 }
