@@ -235,6 +235,7 @@
     pkgs.rofi
     pkgs.hyprpicker
     pkgs.hyprlock
+    pkgs.just
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
