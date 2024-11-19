@@ -237,6 +237,7 @@
     pkgs.hyprlock
     pkgs.just
     pkgs.yt-dlp
+    pkgs.lazygit
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
