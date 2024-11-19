@@ -1,0 +1,10 @@
+rebuild:
+  sudo nixos-rebuild switch --flake ~/flakes
+
+garbage:
+  @echo 'Taking out the garbage now!'
+  nix-collect-garbage --delete-old && sudo nix-collect-garbage -d && sudo /run/current-system/bin/switch-to-configuration boot
+
+update:
+  @echo 'Updating packages....'
+  sudo nixos-rebuild switch --upgrade --flake ~/flakes 
