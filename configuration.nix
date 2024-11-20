@@ -241,6 +241,7 @@
     pkgs.just
     pkgs.yt-dlp
     pkgs.lazygit
+    pkgs.microfetch
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
