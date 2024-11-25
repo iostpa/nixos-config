@@ -207,17 +207,6 @@
     pkgs.element-desktop
     pkgs.dig
 
-    # Hopefully it will work for lazyvim
-    pkgs.clang-tools
-    pkgs.cmake
-    pkgs.codespell
-    pkgs.conan
-    pkgs.cppcheck
-    pkgs.doxygen
-    pkgs.gtest
-    pkgs.lcov
-    pkgs.vcpkg
-    pkgs.vcpkg-tool
     pkgs.gcc
 
     pkgs.gh
