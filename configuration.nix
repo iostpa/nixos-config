@@ -186,7 +186,6 @@
       ];
     })
     inputs.nix-gaming.packages.${pkgs.system}.osu-lazer-bin
-    inputs.nix-gaming.packages.${pkgs.system}.osu-stable
 
     pkgs.libreoffice-qt
     pkgs.hunspell
@@ -231,6 +230,7 @@
     pkgs.yt-dlp
     pkgs.lazygit
     pkgs.microfetch
+    pkgs.kdePackages.filelight
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
