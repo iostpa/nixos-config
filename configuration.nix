@@ -231,6 +231,7 @@
     pkgs.lazygit
     pkgs.microfetch
     pkgs.kdePackages.filelight
+    inputs.zen-browser.packages."${system}".default
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
