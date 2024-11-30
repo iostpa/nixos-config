@@ -43,4 +43,4 @@ Current tree of the config:
 
 # Credits
 
-Yoinked a decent amount of stuff from [orangc](https;//github.com/orangci) (and also the dude who got me to use NixOS).
+Yoinked a decent amount of stuff from [orangc](https://github.com/orangci) (and also the dude who got me to use NixOS).
