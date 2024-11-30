@@ -139,13 +139,12 @@
     };
     neovim = {
       enable = true;
-      defaultEditor = true;
     };
     tmux = {
       enable = true;
       clock24 = true;
     };
-  };
+};
 
   # Enable Nix-gaming
   nix.settings = {
