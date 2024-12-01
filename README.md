@@ -9,8 +9,14 @@ Current tree of the config:
 ├── configs
 │   ├── alacritty
 │   │   └── alacritty.toml
+│   ├── hypr
+│   │   ├── hyprland.conf
+│   │   ├── hyprlock.conf
+│   │   └── macchiato.conf
 │   ├── kde
 │   │   └── kdecatppuchin.knsv
+│   ├── kitty
+│   │   └── kitty.conf
 │   ├── nightTab
 │   │   └── nighttab.json
 │   ├── nvim
@@ -35,7 +41,8 @@ Current tree of the config:
 ├── flake.lock
 ├── flake.nix
 ├── hardware-configuration.nix
-└── README.me
+└── README.md
+
 ```
 
 >[!NOTE]
