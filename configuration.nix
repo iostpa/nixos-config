@@ -93,7 +93,7 @@
   users.users.ethan = {
     isNormalUser = true;
     description = "Ethan";
-    extraGroups = ["networkmanager" "wheel"];
+    extraGroups = ["networkmanager" "wheel" "libvirtd"];
     packages = with pkgs; [
       kdePackages.kate
       #  thunderbird
@@ -107,6 +107,7 @@
       dockerCompat = true;
     };
     libvirtd.enable = true;
+    waydroid.enable = true;
   };
 
   programs = {
@@ -230,6 +231,8 @@
     pkgs.lazygit
     pkgs.microfetch
     pkgs.kdePackages.filelight
+    pkgs.transmission_4-qt
+    pkgs.kdePackages.qtwayland
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
