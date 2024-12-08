@@ -233,6 +233,7 @@
     pkgs.kdePackages.filelight
     pkgs.transmission_4-qt
     pkgs.kdePackages.qtwayland
+    pkgs.filezilla
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
