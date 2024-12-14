@@ -165,7 +165,6 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = [
-    pkgs.vim
     pkgs.wget
     pkgs.git
     pkgs.neofetch
@@ -174,7 +173,6 @@
     pkgs.flatpak
     pkgs.alacritty
     pkgs.vscode
-    pkgs.flameshot
     pkgs.vlc
     pkgs.spotify
     pkgs.vesktop
@@ -194,14 +192,12 @@
 
     pkgs.whatsapp-for-linux
     pkgs.chromium
-    pkgs.epson-escpr2
     pkgs.zsh
     pkgs.tree
     pkgs.nerdfonts
     pkgs.starship
     pkgs.yt-dlp
     pkgs.unzip
-    pkgs.konsave
     pkgs.audacity
     pkgs.element-desktop
     pkgs.dig
@@ -209,14 +205,10 @@
     pkgs.gcc
 
     pkgs.gh
-    pkgs.nodejs
     pkgs.ookla-speedtest
     pkgs.kitty
     pkgs.davinci-resolve
-    pkgs.lutris
     pkgs.nodejs_23
-    pkgs.distrobox
-    pkgs.openrazer-daemon
     pkgs.btop
     pkgs.termius
     pkgs.lunar-client
@@ -230,10 +222,10 @@
     pkgs.yt-dlp
     pkgs.lazygit
     pkgs.microfetch
-    pkgs.kdePackages.filelight
     pkgs.transmission_4-qt
     pkgs.kdePackages.qtwayland
     pkgs.filezilla
+    pkgs.sherlock
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
