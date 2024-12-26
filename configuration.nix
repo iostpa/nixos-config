@@ -194,7 +194,6 @@
     pkgs.chromium
     pkgs.zsh
     pkgs.tree
-    pkgs.nerdfonts
     pkgs.starship
     pkgs.yt-dlp
     pkgs.unzip
