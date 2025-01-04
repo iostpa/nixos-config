@@ -1,4 +1,4 @@
->[!Alert]
+>[!CAUTION]
 > This config is no longer in use anymore. Because NixOS decided to break itself randomly, I decided to move to another distro.
 
 # Welcome to my NixOS config
